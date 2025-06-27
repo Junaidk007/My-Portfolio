@@ -161,7 +161,8 @@ hr {
     justify-content: space-around;
     align-items: center; 
     flex-wrap: wrap;
-    width: 90%;
+    max-width: 90%;
+    width: 1220px;
 }
 
 h2 {
