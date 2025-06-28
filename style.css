@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -14,6 +14,10 @@ html {
     position: sticky;
     top: 0px;
     user-select: none;
+}
+
+#check {
+    display: none;
 }
 
 .nav-contain {
@@ -55,8 +59,11 @@ span {
     color: #00f9ec;
 }
 
-.bars {
-    display: none !important;
+.icon {
+    color: #00f9ec;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
 }
 
 .main {
@@ -124,7 +131,7 @@ span {
 }
 
 .hello {
-    padding: 10px 0;
+    padding: 5px 0;
     color: white;
     border: 2px solid #00f9ec;
     height: 50px;
@@ -159,7 +166,7 @@ hr {
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
     flex-wrap: wrap;
     max-width: 90%;
     width: 1220px;
@@ -168,6 +175,13 @@ hr {
 h2 {
     color: #00f9ec;
     font-size: 4.75em;
+}
+
+h3 {
+    color: #00f9ec;
+    font-size: 4.75em;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .posi {
@@ -196,30 +210,101 @@ h2 {
     color: white;
     font-size: 1.1em;
     line-height: 1.5em;
+    margin-bottom: 45px;
+}
+
+.services {
+    background-color: #191919;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.title {
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #00f9ec;
+}
+
+.card p {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.11em;
+    line-height: 25px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 0;
+    color: white;
+    background-color: #00f9ec;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.button:hover {
+
+    border: 2px solid #00f9ec;
+    color: white;
+    background-color: #191919;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    height: auto;
+    width: 100%;
+    max-width: 355px;
+    padding: 20px 35px;
+    background: #000000;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card i {
+    font-size: 2em;
+    color: #00f9ec;
 }
 
 @media (max-width: 1000px) {
-
-    .bars {
-        display: var(--fa-display, inline-block) !important;
-        position: absolute;
-        color: #00f9ec;
-        font-size: 20px;
-
-        right: 1em;
-    }
 
     hr {
         display: none;
     }
 
-    .bars:hover {
-        font-size: 25px;
-        transition: .4s;
-    }
-
     .nav-ul {
-        display: none;
+        background-color: #00000050;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 68px;
+        height: 0;
+        width: 100%;
+        right: 0;
+        font-size: 1.3rem;
+        transition: 0.3s ease;
+        overflow: hidden;
     }
 
     .hero {
@@ -234,6 +319,27 @@ h2 {
     .img {
         margin-bottom: 30px;
     }
+
+    .icon {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .icon #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icon #menu-icon {
+        display: none;
+    }
+
+    #check:checked~.icon #close-icon {
+        display: block;
+    }
+
+    #check:checked~.nav-ul {
+        height: 40vh;
+    }
 }
 
 @media (max-width: 600px) {
@@ -242,7 +348,12 @@ h2 {
     }
 
     .content h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .in {
+        margin: 10px 0 0 15px;
     }
 
     .circle {
@@ -252,6 +363,36 @@ h2 {
     }
 
     h2 {
-        font-size: 4em;
+        font-size: 3em;
+    }
+
+    .posi {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    .intro {
+        font-size: 1.25rem;
+    }
+
+    .img {
+        height: 560px;
+        width: 345px;
+    }
+
+    .about {
+        padding: 50px 0;
+    }
+
+    .services {
+        padding: 50px 0 ;
+    }
+
+    .description p {
+        font-size: 1em;
     }
 }

@@ -7,19 +7,29 @@
     <title>Portfolio Prototype2</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e69beb2999.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
 </head>
 
 <body>
     <nav id="navigation">
         <div class="nav-contain">
             <div class="logo">Portfo<span>lio</span></div>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon">
+                <i class="fa-solid fa-bars bars" id="menu-icon"></i>
+                <i class="fa-solid fa-xmark bars" id="close-icon"></i>
+            </label>
             <ul class="nav-ul">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact Me</a></li>
             </ul>
-            <i class="fa-solid fa-bars bars"></i>
         </div>
     </nav>
     <div class="main">
@@ -30,7 +40,7 @@
                 <div class="hello">Hello !</div>
                 <p class="in">I'm</p>
                 <h1>Junaid <span>Khan</span></h1>
-                <p class="intro">A student of BCA with Data Science and AI,<br><span>and aspiring Web Developer</span>
+                <p class="intro">A student of BCA<br><span>and, aspiring Web Developer</span>
                 </p>
             </div>
         </div>
@@ -38,29 +48,63 @@
     <section class="about">
         <div class="about-content">
             <!-- <img src="main-img.png" alt="me"> -->
-             <div class="img"></div>
+            <div class="img"></div>
             <div class="description">
                 <h2>About Me</h2>
                 <div class="posi"><strong>Developer & <span>Designer</span></strong></div><br>
-                <p>Hi! I'm <strong>Junaid Khan</strong>, a passionate BCA student specializing in <strong>Data Science &
-                        Artificial Intelligence</strong>. I enjoy exploring new technologies and building creative web
-                    applications.</p><br>
-
-                <p>Currently, I’m learning frontend development and working on improving my skills in HTML, CSS,
-                    JavaScript,
-                    and React. I also have a growing interest in backend technologies and data analytics.</p><br>
-
-                <p>My goal is to become a <strong>full-stack developer</strong> and contribute to real-world projects
-                    that
-                    solve meaningful problems. I'm a curious learner and love working on personal projects that
-                    challenge me
-                    to grow.</p><br>
-
-                <p>When I'm not coding, I enjoy reading tech blogs, experimenting with design ideas, and improving my
-                    problem-solving skills through competitive coding and open-source contributions.</p>
+                <p>I'm a 2nd-year BCA student specializing in Data Science & AI, with a passion for building modern
+                    websites, interactive web apps, and eye-catching designs. I bring ideas to life using HTML, CSS,
+                    JavaScript, and MySQL — and I also enjoy crafting unique logos and graphics that stand out.</p>
+                <p>With a keen eye for detail and a user-first mindset, I focus on creating clean, engaging, and
+                    functional designs that leave an impact</p>
             </div>
         </div>content
     </section>
+    <div class="services">
+        <div class="title">
+            <h3>Services</h3>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p>Every website should be built with two primary goals: Firstly, it needs to work across all
+                        devices. Secondly, it need to be fast as possoble.</p>
+
+                    <p style="text-align: center;">
+                        <a href="#" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-regular fa-user"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p>Every website should be built with two primary goals: Firstly, it needs to work across all
+                        devices. Secondly, it need to be fast as possoble.</p>
+
+                    <p style="text-align: center;">
+                        <a href="#" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-bell"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p>Every website should be built with two primary goals: Firstly, it needs to work across all
+                        devices. Secondly, it need to be fast as possoble.</p>
+
+                    <p style="text-align: center;">
+                        <a href="#" class="button">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
